@@ -1,10 +1,13 @@
 <form (ngSubmit)="submit()" class="input-field flex space-x-3">
 
-  <input type="text" class="rounded h-10 w-4/5 placeholder-gray-400" placeholder="What do you need to do?"
-         [formControl]="inputControl">
+  <label class="w-full">
+    <input [formControl]="inputControl" class="rounded h-10 w-full placeholder-gray-400"
+           placeholder="What do you need to do?"
+           type="text">
+  </label>
 
   <button (click)="submit()" type="submit"
-          class="font-bold text-white bg-blue-500 h-10 rounded py-1 w-1/5">
+          class="font-bold text-white bg-blue-400 h-10 rounded py-1 w-1/5">
     Add
   </button>
 
