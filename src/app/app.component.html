@@ -1,15 +1,15 @@
 <div class="flex flex-col items-center py-5 mt-10 bg-gray-200 max-w-md m-auto rounded-xl space-y-10">
 
   <header>
-    <h1 class="text-3xl font-bold">Twoodo</h1>
+    <h1 class="text-3xl font-bold">Twoodo ✌😁</h1>
     <p class="text-lg italic">Built with Angular, Tailwind and Akita</p>
   </header>
 
   <app-input-field class="w-full px-16"></app-input-field>
 
-  <app-todo-list class="w-full px-16"></app-todo-list>
+  <app-todo-list class="w-full px-16" [showCompleted]="false"></app-todo-list>
 
-  <app-todo-list class="w-full px-16"></app-todo-list>
+  <app-todo-list class="w-full px-16" [showCompleted]="true"></app-todo-list>
 
   <footer class="w-full px-16">
     <button class="font-bold text-white bg-green-400 rounded py-2 w-full">View source on GitHub</button>

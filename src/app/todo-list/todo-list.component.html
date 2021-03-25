@@ -1,9 +1,7 @@
-<div class="todo-list">
+<div>
 
-  <h1 class="font-semibold text-lg">Todo</h1>
+  <h1 class="font-semibold text-lg">{{showCompleted ? 'Completed' : 'Todo'}}</h1>
 
-  <app-todo-list-item></app-todo-list-item>
-  <app-todo-list-item></app-todo-list-item>
-  <app-todo-list-item></app-todo-list-item>
+  <app-todo-list-item *ngFor="let t of todos$ | async" [todo]="t"></app-todo-list-item>
 
 </div>
