@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-
+  public goToSource(): void {
+    window.location.href = 'https://github.com/bjornnorgaard/twoodo';
+  }
 }
